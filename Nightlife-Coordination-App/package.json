@@ -1,0 +1,44 @@
+{
+  "name": "night-life",
+  "version": "1.0.0",
+  "description": "yoyo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhi11210646/Nightlife-Coordination-App.git"
+  },
+  "keywords": [
+    "got",
+    "google",
+    "maps",
+    "api",
+    "querystring",
+    "bluebird",
+    "mongoose",
+    "dotenv"
+  ],
+  "author": "abhishek singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhi11210646/Nightlife-Coordination-App/issues"
+  },
+  "homepage": "https://github.com/abhi11210646/Nightlife-Coordination-App#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "3.5.0",
+    "body-parser": "1.17.1",
+    "dotenv": "4.0.0",
+    "express": "4.15.2",
+    "got": "6.7.1",
+    "mongoose": "4.8.6",
+    "passport": "0.3.2",
+    "passport-jwt": "2.2.1",
+    "passport-local": "1.0.0",
+    "place-search-sdk": "^1.0.1",
+    "querystring": "0.2.0"
+  }
+}

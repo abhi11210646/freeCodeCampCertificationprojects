@@ -1,0 +1,51 @@
+link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+
+article.markdown-body.entry-content(itemprop='text')
+  h1
+    a#user-content-freecodecamp-api-image-search-abstraction-layer.anchor(href='#freecodecamp-api-image-search-abstraction-layer', aria-hidden='true')
+      svg.octicon.octicon-link(aria-hidden='true', height='16', version='1.1', viewbox='0 0 16 16', width='16')
+        path(fill-rule='evenodd', d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z')
+    | FreeCodeCamp API: Image Search Abstraction Layer
+  h2
+    a#user-content-user-stories.anchor(href='#user-stories', aria-hidden='true')
+      svg.octicon.octicon-link(aria-hidden='true', height='16', version='1.1', viewbox='0 0 16 16', width='16')
+        path(fill-rule='evenodd', d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z')
+    | User stories:
+  ol
+    li
+      | I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
+    li I can paginate through the responses by adding a ?offset=2 parameter to the URL.
+    li I can get a list of the most recently submitted search strings.
+  h2
+    a#user-content-example-query-usage.anchor(href='#example-query-usage', aria-hidden='true')
+      svg.octicon.octicon-link(aria-hidden='true', height='16', version='1.1', viewbox='0 0 16 16', width='16')
+        path(fill-rule='evenodd', d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z')
+    | Example query usage:
+  
+  code https://image-khoz.herokuapp.com/imageSearch/abhishek%20singh?offset=4
+  br  
+  code https://image-khoz.heromkuapp.com/latest/
+    
+  h2
+    a#user-content-example-query-output.anchor(href='#example-query-output', aria-hidden='true')
+      svg.octicon.octicon-link(aria-hidden='true', height='16', version='1.1', viewbox='0 0 16 16', width='16')
+        path(fill-rule='evenodd', d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z')
+    | Example query output:
+  .highlight.highlight-source-js
+    pre 
+        code [{ "url": "http://data.whicdn.com/images/34129178/large.jpg", "snippet": "this image include: funny", "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9wRI3mrK8iXg7mcSZx8yfpwlR2W7dCXA3lGHvQ28SnKGsvGYt6eIflAIq", "context": "http://weheartit.com/entry/group/4233028" }, { "url": "https://s-media-cache-ak0.pinimg.com/736x/bc/32/f3/bc32f3896ebe6cfc48d489f5e7674d7a.jpg", "snippet": "#lolcats funny cats:", "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBhYqlh_TWw8ycQeSpt9MwPJLIbL7X9dFCjPpEmSyaIpMQlI-AXN75EUo", "context": "https://www.pinterest.com/pin/51298883228847846/" }, { "url": "http://cdnstatic.visualizeus.com/thumbs/36/0b/funny,lolcat,cats,cat,lolcats,humor-360ba427d350494fb4e69b209a93a814_h.jpg", "snippet": "funny-pictures-cat-breaks-the-", "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3LYyfkNxQWcG6wmB6M2FgUZpMXbjxXhc-g4CJ18luXAvDBdBNrzXAZQ8", "context": "http://vi.sualize.us/funny_pictures_breaks_the_sound_barrier_lolcats_funny_cats_cat_picture_45U4.html" }, { "url": "https://s-media-cache-ak0.pinimg.com/736x/41/d7/b2/41d7b23586ee2fb386d5c894abedd5ab.jpg", "snippet": "Saved from", "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8mlKrDxEzOh9PqCFiDhsdS-xwazvwTibd325l1DAUCC5dUUbq3ax9qI7M", "context": "https://www.pinterest.com/pin/233131718181511758/" }, { "url": "http://s2.favim.com/orig/33/cat-funny-lol-lolcats-mean-Favim.com-261389.jpg", "snippet": "cat, funny, lol, lolcats, mean", "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjH2_3xIIzquPGN-GVgivEQ1Ib4T9W9mCRjcYBsvLNB-e_aWb213o2-qo4", "context": "http://favim.com/image/261389/" }, { "url": "http://cdn.playbuzz.com/cdn/d68ef92c-3973-4b00-98c9-913e423d83ff/f9ec20e0-bb55-48b1-8789-bb51947e4d12.jpg", "snippet": "Whats a Summary of Your life?", "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWWY7kdyrsQXsyW8fqoVs6_I-RwRm1BFpduC6imCrnbsbuT0Q5pmqrHrg", "context": "http://www.playbuzz.com/mikeyh10/whats-a-summary-of-your-life" }, { "url": "http://cdnstatic.visualizeus.com/thumbs/0d/26/funny,cat,catfunny,lolcats,cute,cats-0d26770e7aaca32b2a03e601df429b17_h.jpg", "snippet": "funny-pictures-cat-is-excited-", "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDeAPTYfvumD5duVMM0OqTcyNdQeSqHM5gdm3sHSjV4w4odzQrlcSIRAI", "context": "http://vi.sualize.us/funny_pictures_is_excited_about_cat_funny_ribbons_lol_cats_picture_6gKf.html" }, { "url": "http://cdnstatic.visualizeus.com/thumbs/ef/8f/ef8f397db7ede987b542197dcb5c2f88_h.jpg", "snippet": "lolcats %27n%27 funny pictures", "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqutfDXt3TFGEwFWpx1Wz_M8LE96eXKZssHlyPq63MVyfwCchVmi5JYwvV", "context": "http://vi.sualize.us/quotes_brot_youz_a_flower_lolcats_n_funny_pictures_of_cats_i_can_has_cheezbur_picture_qCWH.html" }, { "url": "https://i.ytimg.com/vi/tRzXptpC3_U/hqdefault.jpg", "snippet": "funny lolcats and loldogs", "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_dKvb6pMA0bod00g0v1Bk3YakSY7H4HYwpu268AqUK8pPiSdlUh9pEnYh", "context": "https://www.youtube.com/watch?v=tRzXptpC3_U" }, { "url": "http://data.whicdn.com/images/29044507/large.jpg", "snippet": "Most popular tags for this", "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRre4NmoJmEOVxSi1VNAumtmb6nuuTpYrLlCPGuOwXXF-R34ngusPjC144", "context": "http://weheartit.com/entry/group/1764108" }]
+
+  h2
+    a#user-content-example-latest-output.anchor(href='#example-latest-output', aria-hidden='true')
+      svg.octicon.octicon-link(aria-hidden='true', height='16', version='1.1', viewbox='0 0 16 16', width='16')
+        path(fill-rule='evenodd', d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z')
+    | Example latest output:
+  .highlight.highlight-source-js
+    pre 
+      code [{"when":"2017-02-18T07:16:02.000Z"},
+      code  {"term":"abhishek singh","when":"2017-02-18T07:17:38.000Z"},
+      code    {"term":"abhishek singh","when":"2017-02-18T07:17:38.000Z"},
+      code    {"term":"abhishek singh","when":"2017-02-18T07:17:38.000Z"},
+      code    {"term":"abhishek singh","when":"2017-02-18T07:17:38.000Z"},
+      code   {"term":"latest","when":"2017-02-18T07:59:36.000Z"}]
+      
