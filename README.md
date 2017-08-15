@@ -1,5 +1,5 @@
 # freeCodeCampCertificationprojects
-These Microservice are moved in Singel Repository from multiple Repo. 
+These Microservice are moved in Single Repository from multiple Repos. 
 Live working Urls...
 
 ## Night Life Cordination App (https://nlcp.herokuapp.com)
